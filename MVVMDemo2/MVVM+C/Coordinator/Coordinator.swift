@@ -8,12 +8,12 @@
 import UIKit
 
 class Coordinator {
-    let service: MockService
-    let presenter: RedViewController
+    let service: CarDataSource
+    let presenter: CarViewController
 
-    init(service: MockService) {
+    init(service: CarDataSource) {
         self.service = service
-        presenter = RedViewController()
+        presenter = CarViewController()
         presenter.delegate = self
 
         DispatchQueue.global().asyncAfter(deadline: .now() + 2.0) {
@@ -28,22 +28,15 @@ class Coordinator {
         }
     }
 
-    func retrieveInformationFromBackend() -> RedViewController.ViewModel {
+    func retrieveInformationFromBackend() -> CarViewController.ViewModel {
         let result = service.fetchData()
-
-        guard let color = result["color"],
-              let car = result["car"],
-              let year = result["year"]
-        else {
-            return RedViewController.ViewModel(carName: "unknown", year: "no year")
-        }
-
-        let model = RedViewController.ViewModel(carName: color + " " + car, year: "Year \(year)")
-        return model
+        return CarViewController.ViewModel(color: result["color"],
+                                           model: result["car"],
+                                           year: result["year_built"])
     }
 }
 
-extension Coordinator: RedViewControllerDelegate {
+extension Coordinator: CarViewControllerDelegate {
     func buttonTapped() {
         fetchFromBackend()
     }

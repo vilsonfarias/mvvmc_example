@@ -7,22 +7,17 @@
 
 import UIKit
 
-protocol RedViewControllerDelegate: AnyObject {
+protocol CarViewControllerDelegate: AnyObject {
     func buttonTapped()
 }
 
-class RedViewController: UIViewController {
+class CarViewController: UIViewController {
 
-    weak var delegate: RedViewControllerDelegate?
+    weak var delegate: CarViewControllerDelegate?
 
-    let mainView = MainView()
+    let mainView = CarView()
 
-    struct ViewModel{
-        let carName: String // Red Ferrari
-        let year: String // Year 2020
-    }
-
-    var viewModel: RedViewController.ViewModel? {
+    var viewModel: CarViewController.ViewModel? {
         didSet {
             updateModel()
         }
@@ -54,7 +49,7 @@ class RedViewController: UIViewController {
     }
 }
 
-extension RedViewController: MainViewDelegate {
+extension CarViewController: CarViewDelegate {
     func buttonTapped() {
         delegate?.buttonTapped()
     }

@@ -8,14 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		AF4E8A86257AC10600CEAED2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4E8A85257AC10600CEAED2 /* AppDelegate.swift */; };
-		AF4E8A8A257AC10600CEAED2 /* RedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4E8A89257AC10600CEAED2 /* RedViewController.swift */; };
+		AF4E8A8A257AC10600CEAED2 /* CarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4E8A89257AC10600CEAED2 /* CarViewController.swift */; };
 		AF4E8A8F257AC10B00CEAED2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF4E8A8E257AC10B00CEAED2 /* Assets.xcassets */; };
 		AF4E8A92257AC10B00CEAED2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF4E8A90257AC10B00CEAED2 /* LaunchScreen.storyboard */; };
 		AF4E8A9D257AC10C00CEAED2 /* MVVMDemo2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4E8A9C257AC10C00CEAED2 /* MVVMDemo2Tests.swift */; };
 		AF4E8AA8257AC10C00CEAED2 /* MVVMDemo2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4E8AA7257AC10C00CEAED2 /* MVVMDemo2UITests.swift */; };
 		AF4E8AB9257AC12400CEAED2 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4E8AB8257AC12400CEAED2 /* Coordinator.swift */; };
-		AF4E8ABE257AC13900CEAED2 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4E8ABD257AC13900CEAED2 /* MainView.swift */; };
-		AF4E8AC6257AC9D300CEAED2 /* MockService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4E8AC5257AC9D300CEAED2 /* MockService.swift */; };
+		AF4E8ABE257AC13900CEAED2 /* CarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4E8ABD257AC13900CEAED2 /* CarView.swift */; };
+		AF4E8AC6257AC9D300CEAED2 /* CarDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4E8AC5257AC9D300CEAED2 /* CarDataSource.swift */; };
+		AF9C9EB0257EAB22008A00EB /* CarViewController+ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9C9EAF257EAB22008A00EB /* CarViewController+ViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +39,7 @@
 /* Begin PBXFileReference section */
 		AF4E8A82257AC10600CEAED2 /* MVVMDemo2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVVMDemo2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF4E8A85257AC10600CEAED2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AF4E8A89257AC10600CEAED2 /* RedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedViewController.swift; sourceTree = "<group>"; };
+		AF4E8A89257AC10600CEAED2 /* CarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarViewController.swift; sourceTree = "<group>"; };
 		AF4E8A8E257AC10B00CEAED2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AF4E8A91257AC10B00CEAED2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AF4E8A93257AC10B00CEAED2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,8 +50,9 @@
 		AF4E8AA7257AC10C00CEAED2 /* MVVMDemo2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMDemo2UITests.swift; sourceTree = "<group>"; };
 		AF4E8AA9257AC10C00CEAED2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AF4E8AB8257AC12400CEAED2 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
-		AF4E8ABD257AC13900CEAED2 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
-		AF4E8AC5257AC9D300CEAED2 /* MockService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockService.swift; sourceTree = "<group>"; };
+		AF4E8ABD257AC13900CEAED2 /* CarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarView.swift; sourceTree = "<group>"; };
+		AF4E8AC5257AC9D300CEAED2 /* CarDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarDataSource.swift; sourceTree = "<group>"; };
+		AF9C9EAF257EAB22008A00EB /* CarViewController+ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CarViewController+ViewModel.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 		AF4E8A84257AC10600CEAED2 /* MVVMDemo2 */ = {
 			isa = PBXGroup;
 			children = (
+				AF4E8A93257AC10B00CEAED2 /* Info.plist */,
 				AF4E8AF1257BFB7600CEAED2 /* AppInitialization */,
 				AF4E8AEA257BFAF400CEAED2 /* MVVM+C */,
 				AF4E8AF0257BFB6300CEAED2 /* Required */,
@@ -138,6 +141,7 @@
 		AF4E8AEB257BFAFB00CEAED2 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				AF9C9EAF257EAB22008A00EB /* CarViewController+ViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -145,7 +149,7 @@
 		AF4E8AEC257BFB1300CEAED2 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				AF4E8AC5257AC9D300CEAED2 /* MockService.swift */,
+				AF4E8AC5257AC9D300CEAED2 /* CarDataSource.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -153,8 +157,8 @@
 		AF4E8AED257BFB2800CEAED2 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				AF4E8A89257AC10600CEAED2 /* RedViewController.swift */,
-				AF4E8ABD257AC13900CEAED2 /* MainView.swift */,
+				AF4E8A89257AC10600CEAED2 /* CarViewController.swift */,
+				AF4E8ABD257AC13900CEAED2 /* CarView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -180,7 +184,6 @@
 		AF4E8AF0257BFB6300CEAED2 /* Required */ = {
 			isa = PBXGroup;
 			children = (
-				AF4E8A93257AC10B00CEAED2 /* Info.plist */,
 				AF4E8A90257AC10B00CEAED2 /* LaunchScreen.storyboard */,
 				AF4E8A8E257AC10B00CEAED2 /* Assets.xcassets */,
 			);
@@ -325,10 +328,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				AF4E8AB9257AC12400CEAED2 /* Coordinator.swift in Sources */,
-				AF4E8A8A257AC10600CEAED2 /* RedViewController.swift in Sources */,
+				AF4E8A8A257AC10600CEAED2 /* CarViewController.swift in Sources */,
 				AF4E8A86257AC10600CEAED2 /* AppDelegate.swift in Sources */,
-				AF4E8ABE257AC13900CEAED2 /* MainView.swift in Sources */,
-				AF4E8AC6257AC9D300CEAED2 /* MockService.swift in Sources */,
+				AF4E8ABE257AC13900CEAED2 /* CarView.swift in Sources */,
+				AF4E8AC6257AC9D300CEAED2 /* CarDataSource.swift in Sources */,
+				AF9C9EB0257EAB22008A00EB /* CarViewController+ViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

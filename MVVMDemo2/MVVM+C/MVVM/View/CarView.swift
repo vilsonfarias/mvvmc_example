@@ -7,13 +7,13 @@
 
 import UIKit
 
-protocol MainViewDelegate: AnyObject {
+protocol CarViewDelegate: AnyObject {
     func buttonTapped()
 }
 
-class MainView: UIView {
+class CarView: UIView {
 
-    weak var delegate: MainViewDelegate?
+    weak var delegate: CarViewDelegate?
 
     private let titleLabel = UILabel()
     private let subTitleLabal = UILabel()
@@ -21,10 +21,14 @@ class MainView: UIView {
 
     override init(frame: CGRect) {
         super.init(frame: frame)
+
         backgroundColor = .red
+
         titleLabel.textColor = .black
         subTitleLabal.textColor = .white
-        button.setTitle("Send data", for: .normal)
+
+        button.setTitle("Get another car", for: .normal)
+        button.setTitleColor(.systemBlue, for: .normal)
     }
 
     required init?(coder aDecoder: NSCoder) {
@@ -41,7 +45,7 @@ class MainView: UIView {
         self.addSubview(button)
 
         NSLayoutConstraint.activate([
-            titleLabel.topAnchor.constraint(equalTo: self.topAnchor, constant: 30),
+            titleLabel.topAnchor.constraint(equalTo: self.topAnchor, constant: 100),
             titleLabel.centerXAnchor.constraint(equalTo: self.centerXAnchor),
 
             subTitleLabal.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 30),
@@ -64,7 +68,7 @@ class MainView: UIView {
         print("set \(titleText) / \(subTitleText)")
         titleLabel.text = titleText
         subTitleLabal.text = subTitleText
-        backgroundColor = titleText == "red Ferrari" ? .red : .blue
+        backgroundColor = titleText == "Red Ferrari" ? .red : .lightGray
         print(backgroundColor!)
     }
 
