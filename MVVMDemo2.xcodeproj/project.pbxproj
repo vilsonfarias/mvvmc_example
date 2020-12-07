@@ -101,14 +101,9 @@
 		AF4E8A84257AC10600CEAED2 /* MVVMDemo2 */ = {
 			isa = PBXGroup;
 			children = (
-				AF4E8A8E257AC10B00CEAED2 /* Assets.xcassets */,
-				AF4E8A90257AC10B00CEAED2 /* LaunchScreen.storyboard */,
-				AF4E8A93257AC10B00CEAED2 /* Info.plist */,
-				AF4E8A85257AC10600CEAED2 /* AppDelegate.swift */,
-				AF4E8AB8257AC12400CEAED2 /* Coordinator.swift */,
-				AF4E8A89257AC10600CEAED2 /* RedViewController.swift */,
-				AF4E8ABD257AC13900CEAED2 /* MainView.swift */,
-				AF4E8AC5257AC9D300CEAED2 /* MockService.swift */,
+				AF4E8AF1257BFB7600CEAED2 /* AppInitialization */,
+				AF4E8AEA257BFAF400CEAED2 /* MVVM+C */,
+				AF4E8AF0257BFB6300CEAED2 /* Required */,
 			);
 			path = MVVMDemo2;
 			sourceTree = "<group>";
@@ -129,6 +124,75 @@
 				AF4E8AA9257AC10C00CEAED2 /* Info.plist */,
 			);
 			path = MVVMDemo2UITests;
+			sourceTree = "<group>";
+		};
+		AF4E8AEA257BFAF400CEAED2 /* MVVM+C */ = {
+			isa = PBXGroup;
+			children = (
+				AF4E8AEF257BFB4A00CEAED2 /* Coordinator */,
+				AF4E8AEE257BFB3B00CEAED2 /* MVVM */,
+			);
+			path = "MVVM+C";
+			sourceTree = "<group>";
+		};
+		AF4E8AEB257BFAFB00CEAED2 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		AF4E8AEC257BFB1300CEAED2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AF4E8AC5257AC9D300CEAED2 /* MockService.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AF4E8AED257BFB2800CEAED2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AF4E8A89257AC10600CEAED2 /* RedViewController.swift */,
+				AF4E8ABD257AC13900CEAED2 /* MainView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AF4E8AEE257BFB3B00CEAED2 /* MVVM */ = {
+			isa = PBXGroup;
+			children = (
+				AF4E8AEC257BFB1300CEAED2 /* Model */,
+				AF4E8AED257BFB2800CEAED2 /* View */,
+				AF4E8AEB257BFAFB00CEAED2 /* ViewModel */,
+			);
+			path = MVVM;
+			sourceTree = "<group>";
+		};
+		AF4E8AEF257BFB4A00CEAED2 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				AF4E8AB8257AC12400CEAED2 /* Coordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		AF4E8AF0257BFB6300CEAED2 /* Required */ = {
+			isa = PBXGroup;
+			children = (
+				AF4E8A93257AC10B00CEAED2 /* Info.plist */,
+				AF4E8A90257AC10B00CEAED2 /* LaunchScreen.storyboard */,
+				AF4E8A8E257AC10B00CEAED2 /* Assets.xcassets */,
+			);
+			path = Required;
+			sourceTree = "<group>";
+		};
+		AF4E8AF1257BFB7600CEAED2 /* AppInitialization */ = {
+			isa = PBXGroup;
+			children = (
+				AF4E8A85257AC10600CEAED2 /* AppDelegate.swift */,
+			);
+			path = AppInitialization;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
